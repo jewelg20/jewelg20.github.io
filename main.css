@@ -1,5 +1,4 @@
-
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7,74 +6,97 @@ ul {
   background-color: lavender;
 }
 
-li {
-  float: left;
+nav li {
+  display: inline-block;
+  position: relative;
 }
 
-li a {
-  display: block;
+nav li a {
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
   background-color: lavender;
 }
 
-.active {
+nav li a.active {
   background-color: darkgray;
-}body {
+}
+
+body {
   background-color: lavender;
+  margin: 60px auto;
+  width: 70%;
 }
 
 h1 {
   color: white;
   text-align: center;
+  font-size: 3em;
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 p {
-  font-family: verdana;
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
   font-size: 40px;
     line-height: 1.4em;
     color: #333;
 }
-    body {
-    margin: 60px auto;
-    width: 70%;
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%
 }
-nav ul, footer ul {
+  
+.button{
+	margin-top: 10px;
+	margin-left: 60px auto;
+}
+
+.btn{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	text-tranform: uppercase;
+}
+
+.btn-one{
+	background color: dark gray;
+	font-family: "Roboto", 'Sans-Serif';
+}
+
+.btn-two{
+	background color: lavender;
+	font-family: "Roboto", 'Sans-Serif';
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
+footer ul li a {
     text-decoration: none;
     color: #999;
 }
-a:hover {
+footer ul li a:hover {
     text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
 }
