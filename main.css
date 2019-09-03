@@ -1,4 +1,4 @@
-/* This gets rid of the vertical list style of the navigation bar and allows is to be shown horizontally */
+/* Gets rid of the vertical list style of the navigation bar (ie: no bullets, circles, etc.) */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -6,7 +6,7 @@ nav ul {
   overflow: hidden;
 }
 
-/* This basically makes the nav bar "float" but in "block formation" */
+/* Makes the nav bar "float" but horizontally in a "block-like formation" (horizontally) */
 nav li {
   display: inline-block;
   position: relative;
@@ -20,14 +20,18 @@ nav li a {
   text-decoration: none;
 }
 
+/* Creates a colored box when the cursor is placed over a certain content area of the navigation bar; shows 
+viewer what they will click on */
 nav li a:hover:not(.active) {
   background-color: darkgray;
 }
 
+/* The active page will have a dark gray box over its place in the navigation bar */
 nav li a.active {
   background-color: darkgray;
 }
 
+/* Shows a screenshot of the embedded video from the home page as a background for the rest of the site's pages */
 body {
   background-image: url("Still_Background.jpg");
   margin: 60px auto;
@@ -43,7 +47,7 @@ body {
   min-height: 100%;
 }
 
-/* Add some content at the bottom of the video/page */
+/* Creates a transparent background for the page's content to lay upon so its easily read by the viewer */
 .content {
   position: relative;
   bottom: 0;
@@ -53,6 +57,7 @@ body {
   padding: 20px;
 }
 
+/* Makes all headers white, the same font, and the same size */
 h1 {
   color: white;
   text-align: center;
@@ -67,6 +72,7 @@ p {
     color: white;
 }
 
+/* Adjusts the size and properties of centered pictures */
 .center{
 	display: block;
 	margin-left: auto;
@@ -79,6 +85,7 @@ p {
 	margin-left: 60px auto;
 }
 
+/* Creates a border around each button and adjusts its size and properties */
 .btn{
 	border: 1px solid white;
 	padding: 10px 30px;
@@ -87,28 +94,24 @@ p {
 	margin-right: 5px;
 	font-size: 13px;
 	text-tranform: uppercase;
-}
-
-.btn-one{
-	background color: dark gray;
 	font-family: "Roboto", 'Sans-Serif';
 }
 
-.btn-two{
-	background color: #b4ecb4;
-	font-family: "Roboto", 'Sans-Serif';
-}
-
+/* Visually separates the page's content from the footer using a line */
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
+/* Horizontal list and visual properties and font styles */
 footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
+
+/* Horizontal list, a certain number of pixels from the right margin */
 footer ul li {
     display: inline;
     margin-right: 20px;
@@ -117,6 +120,8 @@ footer ul li a {
     text-decoration: none;
     color: #999;
 }
+
+/* Underline shows on the element the cursor is hovered over */
 footer ul li a:hover {
     text-decoration: underline;
 }
