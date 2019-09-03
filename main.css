@@ -97,11 +97,11 @@ p {
 	font-family: "Roboto", 'Sans-Serif';
 }
 
-ul.a li a:link {
+.a li a:link {
 	color: white
 }
 
-ul.a li a:hover {
+.a li a:hover {
 	color: #47360a
 }
 
