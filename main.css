@@ -3,7 +3,6 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: lavender;
 }
 
 nav li {
@@ -13,14 +12,14 @@ nav li {
 
 nav li a {
   display: inline-block;
-  color: white;
+  color: #47360a;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 nav li a:hover:not(.active) {
-  background-color: lavender;
+  background-color: darkgray;
 }
 
 nav li a.active {
@@ -28,9 +27,28 @@ nav li a.active {
 }
 
 body {
-  background-color: lavender;
+  background-image: url("Still_Background.jpg");
   margin: 60px auto;
   width: 70%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myBackground {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: relative;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 h1 {
@@ -44,7 +62,7 @@ p {
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
   font-size: 40px;
     line-height: 1.4em;
-    color: #333;
+    color: white;
 }
 
 .center{
@@ -75,7 +93,7 @@ p {
 }
 
 .btn-two{
-	background color: lavender;
+	background color: #b4ecb4;
 	font-family: "Roboto", 'Sans-Serif';
 }
 
