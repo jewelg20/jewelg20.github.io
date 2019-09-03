@@ -1,3 +1,4 @@
+/* This gets rid of the vertical list style of the navigation bar and allows is to be shown horizontally */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -5,6 +6,7 @@ nav ul {
   overflow: hidden;
 }
 
+/* This basically makes the nav bar "float" but in "block formation" */
 nav li {
   display: inline-block;
   position: relative;
