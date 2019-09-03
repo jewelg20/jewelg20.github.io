@@ -57,7 +57,7 @@ body {
   padding: 20px;
 }
 
-/* Makes all headers white, the same font, and the same size */
+/* Makes all headers and paragraphs white, the same font, and the same size */
 h1 {
   color: white;
   text-align: center;
@@ -79,7 +79,8 @@ p {
 	margin-right: auto;
 	width: 50%
 }
-  
+
+/* Adjusts button position within the page of the website */
 .button{
 	margin-top: 10px;
 	margin-left: 60px auto;
@@ -97,6 +98,7 @@ p {
 	font-family: "Roboto", 'Sans-Serif';
 }
 
+/* (Open circle listed) links within the site will appear as white, but turn brown once hovered over */
 .a li a:link {
 	color: white
 }
@@ -124,6 +126,7 @@ footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 footer ul li a {
     text-decoration: none;
     color: #999;
